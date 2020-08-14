@@ -1,0 +1,411 @@
+body{
+    margin:0;
+}
+header{
+    background-size: cover;
+}
+nav{
+    background: #662322;
+    /* background:#A8763E; */
+    height:75px;
+}
+nav ul{
+    list-style-type: none;
+    margin:0;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding:0;
+
+}
+nav ul li{
+    flex-basis: 20%;
+    text-align: center;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: #A8763E;
+    /* border-color:#662322; */
+}
+nav ul li a:not(.hamburger){
+    display: block;
+    color:white;
+    text-decoration: none;
+    width:100%;
+    height:100%;
+    line-height: 75px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+nav li.active, nav li:hover{
+    background-color:#A8763E;
+    /* background-color:#662322; */
+}
+.hamburger{
+    display: none;
+}
+.intro_home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fall_leaves_hanging.jpg);
+    background-position: center;
+}
+.intro_eats{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/food_fire.jpg);
+    background-position: center;
+}
+.intro_activities{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/concert.jpg);
+    background-position: center;
+}
+.intro_group_outings{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/people.jpg);
+}
+.intro_plan_your_visit{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/notebook.jpg);
+    background-position: center;
+}
+.intro{
+    height:40vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+.intro_home{
+    height:80vh;
+}
+.intro *{
+    color:white;
+}
+
+.intro h1{
+    font-size: 52px;
+    text-align: center;
+    padding-top: 100px;
+    margin:0;
+    font-family:cursive;
+}
+.intro h4{
+    text-align: center;
+}
+header :not(.intro_home) h1{
+    padding-top:20vh;
+}
+
+.header_info{
+    background:rgba(255, 255, 255, 0.1);
+    display:flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    justify-content: center;
+    height:75px;
+    line-height: 75px;
+    font-size:28px;
+    font-family: monospace;
+    text-align: center;
+}
+.header_info *{
+    margin:5px 0;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+.intro .button{
+    /* background-color: #22223B; */
+    background: #662322;
+    /* background: #A8763E; */
+    color:white;
+    text-decoration: none;
+    display:block;
+    border-radius: 8px;
+    height:75px;
+    width:200px;
+    margin: 100px auto;
+    text-align: center;
+    line-height: 75px;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.title{
+    text-align: center;
+    font-family:serif;
+    margin-top: 0;
+    height:75px;
+    line-height: 75px;
+    background: #662322;
+    background:#A8763E;
+    color:white;
+}
+body:not(.index) .title{
+    height:50px;
+    line-height: 50px;
+}
+.side_by_side{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    width:100%;
+}
+.side_by_side .text{
+    width:60%;
+    padding: 20px;
+    margin:auto 40px;
+}
+.side_by_side p{
+    padding:20px 10% 20px 10%;
+    line-height: 2em;
+    font-size: 24px;
+}
+.side_by_side img{
+    flex-grow: 1;
+    margin:auto auto;
+}
+.pairing_area{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.pairing{
+    line-height: 40px;
+    flex: 1;
+}
+.pairing img{
+    display: block;
+    margin: 0 auto;
+}
+.pairing h3{
+    font-size:24px;
+    text-align: center;
+}
+.pairing h4{
+    font-size: 18px;
+    text-align: center;
+}
+.pairing p{
+    padding:20px 80px;
+}
+
+.pop_ups{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.pop_up{
+    width:calc(50% - 100px);
+    margin:40px;
+    text-align: center;
+    height:300px;
+    background-color: red;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.meals{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/eating_meal.jpg);
+    background-position: bottom;
+}
+.meals:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/eating_meal.jpg);
+}
+.snacks_desserts{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/pouring_syrup.jpg);
+    background-position: bottom;
+}
+.snacks_desserts:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/pouring_syrup.jpg);
+}
+.beverages{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/cider_bottles.jpg);
+}
+.beverages:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/cider_bottles.jpg);
+}
+.farm_goods{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/produce.jpg);
+    background-position: center;
+}
+.farm_goods:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/produce.jpg);
+    background-position: top;
+}
+.pop_up:hover > .pop_up_text{
+    height:auto;
+    margin-top:180px;
+}
+.pop_up .pop_up_text{
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    overflow:hidden;
+    margin-top:240px;
+    height:60px;
+    font-family: sans-serif;
+}
+.pop_up h3{
+    font-size: 32px;
+    margin:10px 0;
+}
+
+.overlays > div{
+    display: flex;
+    background:white;
+    flex-direction: column;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 500ms;
+    position:fixed;
+    margin:auto auto;
+    width:1200px;
+    height:600px;
+    top:calc(50% - 300px);
+    left:calc(50% - 600px);
+    border:2px solid black;
+}
+.overlays *:target, .overlays *:target *{
+    visibility: visible;
+    opacity:1;
+}
+.overlay_header{
+    background-color: #662322;
+    font-size: 18px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color:white;
+
+}
+.overlay_header a{
+    font-size: 48px;
+    text-decoration: none;
+    color:white;
+    margin:auto 20px;
+}
+.overlay_header a:hover{
+    color:#A8763E;
+}
+
+.overlays ul{
+    overflow-y: scroll;
+}
+
+
+p{
+    font-size:18px;
+}
+figcaption{
+    text-align: center;
+}
+h1,h2,h3,h4,h5{
+    text-transform:capitalize;
+}
+ul,ol{
+    list-style-type: none;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+footer{
+    /* background: #662322; */
+    background:#A8763E;
+    height:150px;
+    line-height: 150px;
+    color:white;
+    text-align: center;
+}
+footer p{
+    font-size: 32px;
+    margin: 0;
+}
+
+@media(max-width:600px){
+    html{
+        font-size: 150%;
+    }
+    .hamburger_open, .hamburger_close{
+        display: inline-block;
+        position:absolute;
+        left:450px;
+        margin:0;
+        color:white;
+        font-size: 32px;
+        text-decoration: none;
+        line-height: 75px;
+    }
+    .hamburger_open:hover, .hamburger_close:hover{
+        color:#A8763E;
+    }
+    .hamburger_open:target, .hamburger_close:target{
+        z-index: calc(attr(increment integer) * -1)
+    }
+    nav ul{
+        display:none;
+        height:calc(100vh - 75px);
+    }
+    nav:target, nav:target ul{
+        position:fixed;
+        width:100%;
+    }
+    nav:target ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        z-index: 2;
+        background: #662322;
+    }
+
+    .header_info{
+        display: none;
+    }
+    figcaption{
+        font-size: 75%;
+    }
+    p{
+        font-size: 125%;
+    }
+    .pairing h4{
+        font-size: 150%;
+    }
+    .row{
+        flex-direction:column;
+    }
+    .side_by_side:not(.busses){
+        flex-direction: column-reverse;
+    }
+    .side_by_side .text{
+        width:100%;
+        margin:auto;
+    }
+    .side_by_side figure{
+        margin:auto;
+    }
+    .pairing figure{
+        margin:auto;
+    }
+    .side_by_side ul{
+        width:100%;
+        padding:5px;
+    }
+    .pop_up .pop_up_text{
+        margin-top: 0;
+        height:100%;
+    }
+    .pop_up_text p{
+        display:none;
+    }
+    .pop_up:hover div p{
+        display: flex;
+        margin-top:-100px;
+    }
+
+
+}
